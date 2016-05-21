@@ -38,8 +38,8 @@ gulp.task('dist', function() {
 gulp.task('default', function() {
 
 	gulp.run('lint', 'dist');
-	gulp.watch(jsFiles, function(evt) {
-		gulp.run('lint', 'dist');
-	});
+	// gulp.watch(jsFiles, function(evt) {
+	// 	gulp.run('lint', 'dist');
+	// });
 
 });
