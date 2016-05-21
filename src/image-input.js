@@ -28,7 +28,7 @@
 			var id = rand();
 			var go = false;
 			
-			while(go == false){
+			while(go === false){
 				if(isNumeric(id[0])){
 					id = rand();
 				}else{
@@ -62,7 +62,7 @@
 
 		var calculateWidth = function(root, cols){
 			
-			var cols = (100 / cols);
+			cols = (100 / cols);
 			var width = $(root).width();
 			var px = (width * cols) / 100;
 			return (px - 25);
@@ -78,8 +78,8 @@
 			var value    = input.val();
 			var arrValue = null;
 
-			if(value == '')
-				arrValue = new Array();
+			if(value === '')
+				arrValue = [];
 			else
 				arrValue = value.split(', ');
 
@@ -171,7 +171,7 @@
 		var unfocusAll = function( struct ){
 			var option = struct.find('.image-input-option');
 			option.each(function(pos, el){
-				var el = $(el);
+				el = $(el);
 				var focus = el.attr('data-input-focus');
 				if(focus == 'true'){
 					unfocusOption(el);
@@ -200,7 +200,7 @@
 				var value = it.attr('data-input-value');
 				var focus = it.attr('data-input-focus');
 
-				if(focus == undefined || focus == ''){
+				if(focus === undefined || focus === ''){
 					focus = 'false';
 				}
 
@@ -240,8 +240,8 @@
 				var inputClass = $(element).attr('data-input-class');
 				var selector   = input.selector;
 
-				if(!inputName || inputName == ''){
-					if(!inputClass || inputClass == ''){
+				if(!inputName || inputName === ''){
+					if(!inputClass || inputClass === ''){
 						console.warn('Set a name or class for this imageInput: ' + selector);
 						return;
 					}
@@ -253,10 +253,10 @@
 
 				input.append(inputControl);
 
-				if(inputName && inputName != '')
+				if(inputName && inputName !== '')
 					inputControl.attr('name', inputName);
 
-				if(settings.multiple == true){
+				if(settings.multiple === true){
 
 					inputControl = $('<input>', {
 						type: 'hidden',
@@ -266,7 +266,7 @@
 					input.append(inputControl);
 				}
 
-				if(inputClass && inputClass != '')
+				if(inputClass && inputClass !== '')
 					inputControl.addClass(inputClass);
 
 
@@ -290,7 +290,7 @@
 
 			setOptions(input);
 			setClickFunction();
-		};
+		}
 
 		init();
 
