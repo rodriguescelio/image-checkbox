@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Input</title>
+	<link rel="stylesheet" type="text/css" href="../dist/image-input.min.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../dist/image-input.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			
+			$('.img-single').imageInput({
+				multiple: false,
+				borderColor: '#3498DB',
+				iconColor: '#FFFFFF',
+				imagesPerLine: 6
+			});
+
+			$('.img-multi').imageInput({
+				multiple: true,
+				borderColor: '#E74C3C',
+				iconColor: '#FFFFFF',
+				imagesPerLine: 6
+			});
+
+		});
+	</script>
+</head>
+<body>
+	
+	<form method="POST" action="">
+
+		<div class="img-single" data-input-name="single" data-input-class="single" >
+			<img src="http://lorempixel.com/300/300/sports/2/" data-value="1">
+			<img src="http://lorempixel.com/300/300/sports/3/" data-value="2">
+			<img src="http://lorempixel.com/300/300/sports/5/" data-value="3">
+			<img src="http://lorempixel.com/300/300/sports/7/" data-value="4">
+			<img src="http://lorempixel.com/300/300/sports/8/" data-value="5">
+			<img src="http://lorempixel.com/300/300/sports/9/" data-value="6">
+		</div>
+
+		<div class="img-multi" data-input-name="multi[]" data-input-class="multi" >
+			<img src="http://lorempixel.com/300/300/animals/1" data-value="1">
+			<img src="http://lorempixel.com/300/300/animals/2" data-value="2">
+			<img src="http://lorempixel.com/300/300/animals/3" data-value="3">
+			<img src="http://lorempixel.com/300/300/animals/4" data-value="4">
+			<img src="http://lorempixel.com/300/300/animals/5" data-value="5">
+			<img src="http://lorempixel.com/300/300/animals/6" data-value="6">
+		</div>
+
+	</form>
+</body>
+</html>

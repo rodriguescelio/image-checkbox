@@ -1,0 +1,33 @@
+.image-input-struct {
+	float: left;
+	width: 100%;
+}
+
+.image-input-struct > .image-input-option {
+	float: left;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.image-input-struct > .image-input-option > img {
+	float: left;
+	width: 100%;
+}
+
+.image-input-struct > .image-input-option > .image-input-flag {
+	display: none;
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-right: 50px solid transparent;
+}
+
+.image-input-struct > .image-input-option > .image-input-flag > i {
+	float: left;
+	margin-top: -42px;
+	margin-left: 5px;
+	font-size: 17px;
+	background-size: 17px 17px;
+	width: 17px;
+	height: 17px;
+}
