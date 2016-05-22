@@ -1,7 +1,7 @@
 {
-  "name": "imageinput",
-  "version": "0.1.0",
-  "description": "",
+  "name": "image-input",
+  "version": "1.0.2",
+  "description": "A jQuery plugin",
   "main": "Gulpfile.js",
   "directories": {
     "test": "test"
@@ -9,11 +9,11 @@
   "dependencies": {
     "gulp-concat": "^2.6.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.7",
     "gulp-jshint": "^2.0.1",
+    "gulp-clean-css": "^2.0.7",
     "gulp-uglify": "^1.5.3",
-    "gulp-csslint": "^0.3.0",
     "gulp-rename": "^1.2.2",
+    "gulp-csslint": "^0.3.0",
     "jshint": "^2.9.2"
   },
   "devDependencies": {},
@@ -24,6 +24,14 @@
     "type": "git",
     "url": "git+https://github.com/theSkilled/ImageInput.git"
   },
+  "keywords": [
+    "jquery",
+    "input",
+    "form",
+    "image",
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
   "author": "Celio Rodrigues",
   "license": "MIT",
   "bugs": {
