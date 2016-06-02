@@ -1,6 +1,6 @@
 {
   "name": "image-input",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A jQuery plugin",
   "main": "Gulpfile.js",
   "directories": {
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theSkilled/ImageInput.git"
+    "url": "git+https://github.com/theSkilled/image-input.git"
   },
   "keywords": [
     "jquery",
@@ -35,7 +35,7 @@
   "author": "Celio Rodrigues",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theSkilled/ImageInput/issues"
+    "url": "https://github.com/theSkilled/image-input/issues"
   },
-  "homepage": "https://github.com/theSkilled/ImageInput#readme"
+  "homepage": "https://github.com/theSkilled/image-input#readme"
 }
